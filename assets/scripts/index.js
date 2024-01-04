@@ -12,7 +12,7 @@ function writeText () {
   idx++
 
   if (idx > text.length) {
-      idx = 1
+    idx = 1
   }
 
   setTimeout(writeText, speed)
@@ -20,6 +20,6 @@ function writeText () {
 // speedEl.addEventListener('input', (e) => { speed = 300 / e.target.value})
 speedEl.addEventListener('input', speedy)
 
-function speedy(e) {
+function speedy (e) {
   speed = 300 / e.target.value
 }
